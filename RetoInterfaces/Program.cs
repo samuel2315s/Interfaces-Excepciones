@@ -8,23 +8,23 @@ class Program
 
         Console.WriteLine("=== REPRODUCTOR DE MUSICA ===");
 
-        reproductor.LoadTrack("Mi primera cancion");
+        Console.WriteLine("Pista actual: " + reproductor.GetCurrentTrack());
+
+        reproductor.LoadTrack("Cancion 1");
         reproductor.Play();
         reproductor.Pause();
         reproductor.Play();
         reproductor.Stop();
 
-        Console.WriteLine("Cancion actual: " +
-            reproductor.GetCurrentTrack());
+        Console.WriteLine("Pista actual: " + reproductor.GetCurrentTrack());
 
-        Console.WriteLine("\n=== SEGUNDA CANCION ===");
+        Console.WriteLine("\n=== SEGUNDA PISTA ===");
 
-        reproductor.LoadTrack("Mi segunda cancion");
+        reproductor.LoadTrack("Cancion 2");
         reproductor.Play();
         reproductor.Pause();
         reproductor.Stop();
 
-        Console.WriteLine("Cancion actual: " +
-            reproductor.GetCurrentTrack());
+        Console.WriteLine("Pista actual: " + reproductor.GetCurrentTrack());
     }
 }
